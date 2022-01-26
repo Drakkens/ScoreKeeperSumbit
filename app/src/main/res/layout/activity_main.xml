@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:orientation="vertical">
+
+
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_gravity="center">
+
+        <ImageButton
+                android:background="@drawable/button_bg"
+                android:minWidth="@dimen/bttnWidth"
+                android:minHeight="@dimen/bttnHeight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/decreaseScoreTeam1"
+                android:layout_below="@id/teamName1"
+                style="@style/MinusButtons"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="100dp"
+                android:layout_alignParentStart="true"
+                android:onClick="decreaseScore" />
+
+        <TextView
+                android:id="@+id/showScoreTeam1"
+                android:layout_below="@id/teamName1"
+                android:text="@string/_0"
+                style="@style/ScoreStyle" />
+
+        <TextView
+                android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/teamName1"
+                android:text="@string/team_1"
+                android:textSize="24sp"
+                android:layout_marginTop="10dp"
+                android:layout_centerHorizontal="true" />
+
+
+        <ImageButton
+                android:background="@drawable/button_bg"
+                android:minWidth="@dimen/bttnWidth"
+                android:minHeight="@dimen/bttnHeight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/increaseScoreTeam1"
+                android:layout_below="@id/teamName1"
+                style="@style/PlusButtons"
+                android:layout_marginTop="10dp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="100dp"
+                android:onClick="increaseScore" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_gravity="center">
+
+
+        <ImageButton
+                android:background="@drawable/button_bg"
+                android:minWidth="@dimen/bttnWidth"
+                android:minHeight="@dimen/bttnHeight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/decreaseScoreTeam2"
+                android:layout_below="@id/teamName2"
+                style="@style/MinusButtons"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="100dp"
+                android:layout_alignParentStart="true"
+                android:onClick="decreaseScore" />
+
+        <TextView
+
+                android:id="@+id/showScoreTeam2"
+                android:layout_below="@id/teamName2"
+                android:text="@string/_0"
+
+                style="@style/ScoreStyle" />
+
+        <TextView
+                android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/teamName2"
+                android:text="@string/team_2"
+                android:textSize="24sp"
+                android:layout_marginTop="10dp"
+                android:layout_centerHorizontal="true" />
+
+
+        <ImageButton
+                android:background="@drawable/button_bg"
+                android:minWidth="@dimen/bttnWidth"
+                android:minHeight="@dimen/bttnHeight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/increaseScoreTeam2"
+                android:layout_below="@id/teamName2"
+                style="@style/PlusButtons"
+                android:layout_marginTop="10dp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="100dp"
+                android:onClick="increaseScore" />
+
+    </RelativeLayout>
+</LinearLayout>
